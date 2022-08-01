@@ -10,7 +10,10 @@
 </head>
 <body>
 
-
-
+{% if name in friends %}
+        <p id = "friend"> This friend exists</p>
+    {% else %}
+        <p id = "friend"> This friend is a fake</p>
+    {% endif %}
 </body>
 </html>
